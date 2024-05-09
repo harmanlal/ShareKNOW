@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">ShareKNOW</string>
+    <string name="title_activity_incoming_request">IncomingRequest</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="mainImage"> An Image</string>
+    <string name="btnLogin">Get Started</string>
+
+    <string name="btnLoginPageUser">User Login</string>
+    <string name="btnLoginPageAdmin">Admin Login</string>
+    <string name="emailHint">Enter username or email</string>
+    <string name="passwordHint">Enter Password</string>
+    <string name="forgotPassword">Forgot your Password ?</string>
+    <string name="noAccount">Does not have an Account yet?</string>
+
+    <string name="addUpdateBook">ADD/UPDATE BOOK</string>
+    <string name="burrowBook">BURROW A BOOK</string>
+    <string name="readingTracker">READING TRACKER</string>
+    <string name="updateProfile">UPDATE PROFILE</string>
+
+    <string name="txtAddBook">Add Book</string>
+    <string name="txtUpdateBook">Update Book</string>
+    <string name="description">images</string>
+
+    <string name="txtAddBookTitle">Title</string>
+    <string name="txtAddBookAuthor">Author</string>
+    <string name="txtAddBookPublisher">Publisher</string>
+    <string name="txtAddBookPublicationYear">Publication Year</string>
+    <string name="btnAddBook">Add Book</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="radioBookShare">Share</string>
+    <string name="radioBookGiveAway">Give Away</string>
+    <string name="radioBookRent">Rent</string>
+    <string name="txtBookCategory">Add a Category</string>
+
+    <string name="txtSelectBook">Select the book to update</string>
+    <string name="btnSelectToUpdate">SELECT BOOK</string>
+    <string name="txtUpdateDetails">UPDATE BOOK DETAILS</string>
+    <string name="btnUpdateBook">UPDATE DETAILS</string>
+    <string name="btnUpdateBookCancel">CANCEL</string>
+
+    <string name="UpdateConfirmation">DETAILS UPDATED SUCCESSFULLY</string>
+    <string name="btnBackToUserPage">BACK TO CHOICES</string>
+
+    <string name="txtPostalCode">ENTER YOUR CITY</string>
+    <string name="btnFindBookByPostalCode">FIND</string>
+
+    <string name="txtAvailableBooks">LIST OF AVAILABLE BOOKS</string>
+    <string name="btnSelectAvailableBook">SELECT BOOK</string>
+
+    <string name="txtBookInfoTitle">Book Information</string>
+    <string name="txtTitleRequestedBook">Title</string>
+    <string name="txtAuthorRequestedBook">Author</string>
+    <string name="txtPublisherRequestedBook">Publisher</string>
+    <string name="txtPublicationYearRequestedBook">Publication Year</string>
+    <string name="txtOwnerRequestedBook">Owner Name</string>
+    <string name="txtOwnerAddressRequestedBook">Owner Address</string>
+    <string name="btnRequestBook">REQUEST NOW</string>
+
+    <string name="txtTitleRequestedBookFromDatabase">Title From Database Goes Here</string>
+    <string name="txtAuthorRequestedBookFromDatabase">Author Name Goes here</string>
+    <string name="txtPublisherRequestedBookFromDatabase">Publisher Name Goes here</string>
+    <string name="txtPublicationYearRequestedBookFromDatabase">Publication Year Goes Here</string>
+    <string name="txtOwnerRequestedBookFromDatabase">Owner Name Goes Here</string>
+    <string name="txtOwnerAddressRequestedBookFromDatabase">Owner Address Goes Here</string>
+
+    <string name="txtMessageToOwner">Send Mesaage to Book Owner</string>
+    <string name="btnMessageSend">SEND MESSAGE</string>
+
+    <string name="txtReadingTrackerTitle">Enter the Book Information you read Last week</string>
+    <string name="txtReadBookTitle">Title</string>
+    <string name="txtReadBookAuthor">Author</string>
+    <string name="txtReadBookPublisher">Publisher</string>
+    <string name="txtComments">Other comments</string>
+    <string name="btnEnterInfoReadingTracker">ENTER</string>
+    <string name="btnCancelReadingTracker">CANCEL</string>
+
+    <string name="email">Email Address</string>
+    <string name="givenName">Given Name</string>
+    <string name="FamilyName">Family Name</string>
+    <string name="DateOfBirth">Date of Birth</string>
+    <string name="Address">Postal Code</string>
+    <string name="txtReadingInterest">Reading Interest</string>
+    <string name="RbFiction">Fiction</string>
+    <string name="RbScienceFiction">Science-Fiction</string>
+    <string name="RbNovel">Novel</string>
+    <string name="RbScience">Science</string>
+    <string name="btnRegister">REGISTER</string>
+    <string name="btnBack">BACK</string>
+
+
+    <string name="adminPanelMessage">WELCOME TO ADMIN PANEL</string>
+    <string name="btnViewUsers">View Users</string>
+    <string name="btnViewBooks">View Books</string>
+    <string name="DeleteUsers">Delete User</string>
+    <string name="ViewRequests">View Message Requests</string>
+    <string name="btnLogOut">Log Out</string>
+    <string name="txtBookNameSelected">Enter Name of Book From List</string>
+    <string name="txtUserName">Enter User Name</string>
+
+
+    <string name="bookname">Enter Book Name Here</string>
+    <string name="bookAuthor">Enter Author Name Here</string>
+    <string name="bookPublisher">Enter Publisher Here</string>
+    <string name="bookPublicationYear">Enter Publication Year</string>
+    <string name="bookOwner">Enter Owner Name</string>
+    <string name="OwnerAddress">Enter Address</string>
+    <string name="btnAdd">Add Book</string>
+    <string name="txtTitle">Add Books By Region</string>
+
+    <string name="txtUserTitle">Registered Users</string>
+    <string name="txtBooksTitle">Books in Database</string>
+    <string name="btnDelBooks">DELETE BOOK</string>
+
+    <string name="txtUserIdDel">ENTER USER GIVEN NAME</string>
+    <string name="btnDeleteUser">DELETE USER</string>
+    <string name="txtBookIdToDel">ENTER BOOK TITLE</string>
+    <string name="btnDeleteBook">DELETE BOOK</string>
+    <string name="txtSplashScreen">WELCOME USER</string>
+    <string name="btnReadingHistory">READING HISTORY</string>
+    <string name="txtHistory">READING HISTORY</string>
+    <string name="txtFrom">From:</string>
+    <string name="txtTo">To:</string>
+
+    <string name="txtPendingRequests">MESSAGE REQUESTS BY USERS</string>
+    <string name="btnUpdateBookStatus">UPDATE BOOK STATUS</string>
+
+    <string name="btnRespond">RESPOND BY AUTOMATED MESSAGE</string>
+    <string name="btnDelRequest">DELETE COMPLETED REQUEST</string>
+    <string name="btnLogInfo">LOG IN INFO</string>
+    <string name="txtLog">LOG IN INFORMATION</string>
+    <string name="btnResponse">VIEW RESPONSES</string>
+    <string name="btnUpdateBookAvail">UPDATE BOOK AVAILABILITY</string>
+
+
+</resources>

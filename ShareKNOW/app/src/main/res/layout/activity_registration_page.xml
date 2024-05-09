@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".RegistrationPage">
+
+    <EditText
+        android:id="@+id/txtEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="185dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRegister"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtGnameRegister"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="185dp"
+        android:ems="10"
+        android:hint="@string/givenName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailRegister"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtFnameRegister"
+        android:layout_width="212dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="183dp"
+        android:ems="10"
+        android:hint="@string/FamilyName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGnameRegister"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtDateRegister"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="182dp"
+        android:ems="10"
+        android:hint="@string/DateOfBirth"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFnameRegister"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtAddressRegister"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="182dp"
+        android:ems="10"
+        android:hint="@string/Address"
+        android:importantForAutofill="no"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateRegister"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtReadingInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="154dp"
+        android:text="@string/txtReadingInterest"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddressRegister" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/btnRegister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageRegister"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/btnLoginNow"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogInfo"
+        app:layout_constraintStart_toEndOf="@+id/btnRegister"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/rbChoices"
+        android:layout_width="266dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="113dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReadingInterest">
+
+        <RadioButton
+            android:id="@+id/rbFiction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RbFiction"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/rbScience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RbScience"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rbScienceFictrion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RbScienceFiction"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/rbNovel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RbNovel"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLogInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/btnLogInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLoginNow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

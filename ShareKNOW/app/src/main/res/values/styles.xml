@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style  name = "ShareKNOW" parent = "Theme.AppCompat.Light">
+        <item name = "actionBarStyle">@style/ShareKNOW.ActionBarStyle</item>
+    </style>
+    <style name = "ShareKNOW.ActionBarStyle">
+        <item name = "logo">@mipmap/logoimage</item>
+        <item name = "displayOptions">showHome|useLogo|showTitle</item>
+    </style>
+</resources>

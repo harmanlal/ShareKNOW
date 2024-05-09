@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".DeleteUsers">
+
+    <EditText
+        android:id="@+id/txtDeleteUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/txtUserIdDel"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteUser"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="249dp"
+        android:text="@string/btnDeleteUser"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtDeleteUserId"
+        app:layout_constraintTop_toBottomOf="@+id/txtDeleteUserId" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="402dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/mainImage"
+        app:layout_constraintBottom_toTopOf="@+id/txtDeleteUserId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+</androidx.constraintlayout.widget.ConstraintLayout>

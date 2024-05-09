@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".SelectToUpdate">
+
+    <TextView
+        android:id="@+id/txtSelectBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/txtSelectBook"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBookData"
+        app:layout_constraintStart_toStartOf="@+id/txtBookData"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:onClick="update"
+        android:text="@string/btnSelectToUpdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookNameSelected"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtBookData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="43dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBookNameSelected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelectBook" />
+
+    <EditText
+        android:id="@+id/txtBookNameSelected"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/txtBookNameSelected"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookData"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".ReadingTracker">
+
+    <TextView
+        android:id="@+id/txtReadingTrackerTitle"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/txtReadingTrackerTitle"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtBookRT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="258dp"
+        android:ems="10"
+        android:hint="@string/txtReadBookTitle"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtAuthorRT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="@string/txtReadBookAuthor"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookRT"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtPublisherRT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/txtReadBookPublisher"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAuthorRT"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="cancelBtn"
+        android:text="@string/btnCancelReadingTracker"
+        app:layout_constraintEnd_toEndOf="@+id/txtPublisherRT"
+        app:layout_constraintTop_toBottomOf="@+id/txtPublisherRT" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:hint="@string/txtUserName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBookRT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReadingTrackerTitle"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/btnEnterInfoReadingTracker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPublisherRT" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="413dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/mainImage"
+        app:layout_constraintBottom_toTopOf="@+id/txtUserSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/txtUserSplash"
+        android:layout_width="267dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="231dp"
+        android:background="#0288D1"
+        android:text="@string/txtSplashScreen"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:textColor="#FFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>

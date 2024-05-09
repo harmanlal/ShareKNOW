@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".UserPage">
+
+    <Button
+        android:id="@+id/btnAddUpdate"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:onClick="addUpdateEnter"
+        android:text="@string/addUpdateBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUserPage"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnBorrow"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:onClick="BorrowEnter"
+        android:text="@string/burrowBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddUpdate"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnReadingTrack"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="rTrackerEnter"
+        android:text="@string/readingTracker"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdateProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="147dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/updateProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageUserPage"
+        android:layout_width="403dp"
+        android:layout_height="207dp"
+        android:contentDescription="@string/mainImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUserPage" />
+
+    <Button
+        android:id="@+id/btnResponse"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="viewResponses"
+        android:text="@string/btnResponse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

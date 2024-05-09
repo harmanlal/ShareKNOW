@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".AddUpdateChoicePage">
+
+    <TextView
+        android:id="@+id/txtAddBook"
+        android:layout_width="190dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:text="@string/txtAddBook"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAddBook"
+        tools:ignore="TouchTargetSizeCheck"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/txtUpdateBook"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="111dp"
+        android:clickable="true"
+        android:text="@string/txtUpdateBook"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUpdateBook"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/imageAddBook"
+        android:layout_width="270dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="297dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toTopOf="@+id/txtUpdateBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addbook" />
+
+    <ImageView
+        android:id="@+id/imageUpdateBook"
+        android:layout_width="216dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toTopOf="@+id/txtUpdateBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddBook"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/update" />
+</androidx.constraintlayout.widget.ConstraintLayout>
